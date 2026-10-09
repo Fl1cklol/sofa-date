@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff6f5">
+<title>Софа, у меня кое-что для тебя 💌</title>
+<style>
+:root{--ink:#34252d;--muted:#806d76;--pink:#e9a6b7;--rose:#c96885;--cream:#fffaf5;--line:#f0dce2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:ui-rounded,"Avenir Next",Avenir,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 15% 5%,#ffe5ed 0,transparent 38%),radial-gradient(ellipse at 90% 30%,#f9e8db 0,transparent 32%),var(--cream);min-height:100vh;overflow-x:hidden}
+button,input,textarea{font:inherit}button{cursor:pointer}.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.petal{position:absolute;opacity:.22;animation:float 14s linear infinite;font-size:20px}@keyframes float{from{transform:translateY(110vh) rotate(0)}to{transform:translateY(-15vh) rotate(300deg)}}
+main{position:relative;z-index:1;min-height:100vh;display:grid;place-items:center;padding:24px 16px}.panel{width:min(100%,720px);min-height:560px;border:1px solid #fff;background:rgba(255,255,255,.74);backdrop-filter:blur(14px);box-shadow:0 22px 70px #b66b821c;border-radius:30px;padding:clamp(22px,5vw,48px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}.eyebrow{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);font-weight:700;margin-bottom:14px}.serif{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.035em}.panel h1{font-size:clamp(2.5rem,7vw,4.6rem);line-height:1.02;margin:0 0 18px}.panel h2{font-size:clamp(2rem,5vw,3.1rem);line-height:1.08;margin:0 0 14px}.lead{font-size:clamp(1rem,2.5vw,1.18rem);line-height:1.75;color:var(--muted);max-width:510px;margin:0 auto 26px}.sparkle{display:inline-block;animation:twinkle 2s ease-in-out infinite}@keyframes twinkle{50%{transform:rotate(15deg) scale(1.18)}}.btn{border:0;border-radius:999px;padding:14px 24px;font-weight:700;transition:transform .2s,box-shadow .2s;background:var(--rose);color:white;box-shadow:0 9px 22px #c9688530}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px #c9688540}.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #df9aaf;outline-offset:3px}.btn.secondary{background:#fff;color:var(--rose);border:1px solid var(--line);box-shadow:none}.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}.tiny{font-size:.83rem;color:#a18a93;margin-top:20px}.hidden{display:none!important}.screen{width:100%;animation:appear .55s ease both}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}.progress{height:4px;background:#f3e4e8;border-radius:10px;width:100%;margin-bottom:26px;overflow:hidden}.progress span{display:block;height:100%;background:linear-gradient(90deg,#e8a5b6,#c96885);border-radius:10px;transition:width .3s}.slide-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,.86fr);gap:28px;align-items:center;text-align:left}.slide-layout img{width:100%;height:330px;object-fit:cover;border-radius:22px;box-shadow:0 14px 35px #6b3a4a20}.slide-copy h2{font-size:clamp(1.8rem,4vw,2.8rem)}.slide-copy p{font-size:1.05rem;line-height:1.75;color:var(--muted)}.slide-count{font-size:.8rem;letter-spacing:.12em;color:#a78a95;margin-bottom:12px}.form-card{width:min(100%,460px);margin:8px auto 0;text-align:left}.field{display:block;margin:15px 0}.field span{display:block;font-size:.88rem;color:#795d68;margin-bottom:7px;font-weight:650}.field input,.field textarea{width:100%;border:1px solid #ead6de;background:#fffdfc;border-radius:13px;padding:13px 14px;color:var(--ink)}.field textarea{resize:vertical;min-height:84px}.choice{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.choice .btn{flex:1;min-width:170px}.status{font-size:.9rem;color:var(--muted);line-height:1.5;margin-top:15px;min-height:1.4em}.final-photo{width:150px;height:150px;border-radius:50%;object-fit:cover;border:5px solid white;box-shadow:0 8px 30px #c9688526;margin-bottom:20px}.summary{background:#fff7f8;border:1px solid var(--line);padding:16px 18px;border-radius:16px;text-align:left;line-height:1.7;color:#745965;width:min(100%,420px);margin:12px auto 20px;overflow-wrap:anywhere}.footer{font-size:.76rem;color:#b49aa4;margin-top:26px}
+@media(max-width:600px){main{padding:12px}.panel{min-height:calc(100svh - 24px);border-radius:24px;padding:24px 18px}.slide-layout{grid-template-columns:1fr;gap:18px;text-align:center}.slide-layout img{height:min(44vh,300px);max-height:300px}.slide-copy p{margin-bottom:0}.progress{margin-bottom:20px}.actions{margin-top:18px}.slide-copy h2{margin-bottom:10px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="petals" aria-hidden="true" id="petals"></div>
+<main><section class="panel" aria-live="polite">
+  <section class="screen" id="welcome">
+    <div class="eyebrow">маленькая история для Софи</div>
+    <h1 class="serif">У меня кое-что<br>для тебя <span class="sparkle">✧</span></h1>
+    <p class="lead">Тут маленькая история. Готова?</p>
+    <button class="btn" id="start">Нажми на меня ✨</button>
+    <div class="tiny">листай в своём темпе · без спешки</div>
+  </section>
+
+  <section class="screen hidden" id="story">
+    <div class="progress" aria-label="Прогресс истории"><span id="progressFill"></span></div>
+    <div class="slide-count" id="slideCount"></div>
+    <div class="slide-layout">
+      <img id="slideImage" src="assets/sofa-outdoor-pink.jpg" alt="Фотография Софы">
+      <div class="slide-copy">
+        <div class="eyebrow">это всё о тебе</div>
+        <h2 class="serif" id="slideTitle"></h2>
+        <p id="slideText"></p>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn secondary" id="back">← Назад</button>
+      <button class="btn" id="next">Дальше →</button>
+    </div>
+  </section>
+
+  <section class="screen hidden" id="invite">
+    <div class="eyebrow">и вот что я хотел спросить</div>
+    <h2 class="serif">Пойдёшь со мной<br>на свидание?</h2>
+    <p class="lead">Я бы очень хотел провести с тобой время — спокойно поболтать, посмеяться и придумать что-нибудь приятное. Выбери дату и время, которые тебе подходят 🌸</p>
+    <form class="form-card" id="dateForm">
+      <label class="field"><span>Когда тебе удобно?</span><input id="date" name="date" type="date" required></label>
+      <label class="field"><span>Во сколько?</span><input id="time" name="time" type="time" required></label>
+      <label class="field"><span>Что-нибудь добавить? (необязательно)</span><textarea id="comment" name="comment" maxlength="500" placeholder="Например, куда хочешь сходить…"></textarea></label>
+      <div class="choice">
+        <button class="btn" type="submit" id="yesButton">Да, давай! 💕</button>
+        <button class="btn secondary" type="button" id="notYet">Я пока не готова</button>
+      </div>
+      <div class="status" id="formStatus" role="status"></div>
+    </form>
+  </section>
+
+  <section class="screen hidden" id="result">
+    <img class="final-photo" src="assets/sofa-closeup.jpg" alt="Софа">
+    <div class="eyebrow">спасибо за ответ</div>
+    <h2 class="serif" id="resultTitle">💗</h2>
+    <p class="lead" id="resultText"></p>
+    <div class="summary hidden" id="summary"></div>
+    <div class="status" id="sendStatus" role="status"></div>
+    <div class="actions"><button class="btn secondary" id="retry" hidden>Попробовать отправить ещё раз</button><button class="btn" id="restart">Начать сначала</button></div>
+    <div class="footer">Сделано с теплом и без всякого давления ♡</div>
+  </section>
+</section></main>
+<script>
+const slides = [
+ {title:"Ты особенная",text:"В тебе есть что-то своё — стиль, настроение и подача, которые цепляют взгляд. Тебя сложно спутать с кем-то другим.",image:"assets/sofa-outdoor-pink.jpg",alt:"Софа на прогулке"},
+ {title:"У тебя классный стиль",text:"Мне нравится, как ты умеешь сочетать вещи и создавать разное настроение в образах. В каждом фото ты будто немного другая — и это здорово.",image:"assets/sofa-white-top.jpg",alt:"Софа в светлом образе"},
+ {title:"Ты умеешь быть разной",text:"То нежный и лёгкий кадр, то уверенный городской вайб. В тебе есть характер, и это заметно даже на фотографиях.",image:"assets/sofa-monochrome.jpg",alt:"Чёрно-белый портрет Софы"},
+ {title:"Тебе идёт быть собой",text:"Мне нравится эта естественность: не нужно стараться быть кем-то ещё, чтобы выглядеть классно. В этом и есть твоя изюминка.",image:"assets/sofa-purple.jpg",alt:"Софа в фиолетовом образе"},
+ {title:"С тобой хочется общаться",text:"Ты кажешься человеком, с которым можно и посмеяться, и неожиданно уйти в интересный разговор. Мне хочется узнать тебя поближе.",image:"assets/sofa-closeup.jpg",alt:"Портрет Софы"},
+ {title:"И вот что я хотел сказать…",text:"Мне хочется не просто иногда переписываться, а провести с тобой время вживую. Без сложных планов — просто хороший вечер и приятная компания.",image:"assets/sofa-night.jpg",alt:"Софа в вечернем образе"}
+];
+const screens = ["welcome","story","invite","result"].map(id=>document.getElementById(id));
+let slideIndex=0, lastPayload=null, busy=false;
+const $=id=>document.getElementById(id);
+function show(id){screens.forEach(s=>s.classList.toggle("hidden",s.id!==id));}
+function renderSlide(){
+ const s=slides[slideIndex]; $("slideTitle").textContent=s.title; $("slideText").textContent=s.text;
+ $("slideImage").src=s.image; $("slideImage").alt=s.alt;
+ $("slideCount").textContent=`${String(slideIndex+1).padStart(2,"0")} / ${String(slides.length).padStart(2,"0")}`;
+ $("progressFill").style.width=`${(slideIndex+1)/slides.length*100}%`;
+ $("back").style.visibility=slideIndex===0?"hidden":"visible";
+ $("next").textContent=slideIndex===slides.length-1?"К самому главному 💌":"Дальше →";
+}
+$("start").addEventListener("click",()=>{slideIndex=0;renderSlide();show("story")});
+$("back").addEventListener("click",()=>{if(slideIndex>0){slideIndex--;renderSlide()}});
+$("next").addEventListener("click",()=>{if(slideIndex<slides.length-1){slideIndex++;renderSlide()}else show("invite")});
+const today=new Date(); const localToday=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10); $("date").min=localToday;
+$("date").addEventListener("change",()=>{if($("date").value<localToday)$("date").value=localToday;});
+function payload(answer){return {answer,date:answer==="Да, давай!"? $("date").value:"не выбрана",time:answer==="Да, давай!"? $("time").value:"не выбрано",comment:$("comment").value.trim(),sentAt:new Date().toLocaleString("ru-RU"),recipient:"klimovadxd@yandex.ru"}}
+function showResult(data){
+ $("resultTitle").textContent=data.answer==="Да, давай!"?"Это будет здорово! 🥰":"Спасибо за честность 💗";
+ $("resultText").textContent=data.answer==="Да, давай!"?"Уже радуюсь этому вечеру. Договоримся о деталях и выберем что-нибудь классное.":"Всё хорошо, правда. Спасибо, что ответила честно — никаких обид и давления.";
+ const summary=$("summary");
+ if(data.answer==="Да, давай!"){summary.classList.remove("hidden");summary.innerHTML="";
+  const lines=[["Дата",data.date],["Время",data.time],...(data.comment?[["Комментарий",data.comment]]:[])];
+  lines.forEach(([k,v])=>{const row=document.createElement("div");const strong=document.createElement("strong");strong.textContent=k+": ";row.append(strong,document.createTextNode(v));summary.append(row)});
+ }else summary.classList.add("hidden");
+ $("retry").hidden=false; $("sendStatus").textContent="Ответ ещё не отправлен. Сейчас попробуем передать его на почту.";
+ show("result");
+}
+async function sendEmail(data){
+ // FormSubmit AJAX. Initial activation email must be confirmed by the mailbox owner.
+ const endpoint="https://formsubmit.co/ajax/klimovadxd@yandex.ru";
+ const body={_subject:"Ответ на приглашение на свидание 💌",_template:"table",_captcha:"false",Ответ:data.answer,Дата:data.date,Время:data.time,Комментарий:data.comment||"не указан","Дата и время ответа":data.sentAt};
+ try{
+   const response=await fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(body)});
+   if(!response.ok) throw new Error("Сервис вернул ошибку ("+response.status+")");
+   const result=await response.json();
+   if(result.success===true || result.success==="true"){
+     $("sendStatus").textContent="Сервис подтвердил приём ответа на отправку. Проверь почту и папку «Спам» — доставка может занять немного времени.";
+     $("retry").hidden=true;
+   }else throw new Error("Почтовый сервис не подтвердил отправку.");
+ }catch(err){
+   $("sendStatus").textContent="Не удалось подтвердить отправку письма. Твой ответ сохранён на этом экране — попробуй ещё раз или сообщи Андрею лично.";
+   $("retry").hidden=false;
+ }
+}
+function submitAnswer(answer){
+ if(busy)return;
+ if(answer==="Да, давай!" && (!$("date").value||!$("time").value)){ $("formStatus").textContent="Выбери, пожалуйста, дату и время — и можно отправлять 💗"; return; }
+ if(answer==="Да, давай!" && $("date").value<localToday){ $("formStatus").textContent="Выбери дату сегодня или позже."; return; }
+ lastPayload=payload(answer); showResult(lastPayload); sendEmail(lastPayload);
+}
+$("dateForm").addEventListener("submit",e=>{e.preventDefault();submitAnswer("Да, давай!")});
+$("notYet").addEventListener("click",()=>submitAnswer("Я пока не готова"));
+$("retry").addEventListener("click",()=>{if(lastPayload)sendEmail(lastPayload)});
+$("restart").addEventListener("click",()=>{slideIndex=0;renderSlide();$("formStatus").textContent="";$("sendStatus").textContent="";show("welcome")});
+const petals=$("petals");["♡","✧","✿","·","♡","✦","❀","♡"].forEach((symbol,i)=>{const el=document.createElement("span");el.className="petal";el.textContent=symbol;el.style.left=(5+i*12)+"%";el.style.animationDelay=(-i*1.7)+"s";el.style.animationDuration=(12+i%4*2)+"s";el.style.fontSize=(14+i%3*7)+"px";petals.append(el)});
+renderSlide();
+</script>
+</body></html>
